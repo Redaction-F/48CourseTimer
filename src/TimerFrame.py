@@ -3,8 +3,8 @@ import datetime
 from typing import Optional, TYPE_CHECKING
 import tkinter as tk
 from tkinter import ttk, messagebox
-from LapTimer import Timer, Time
-from Record import Record, resource_path
+from src.LapTimer import Timer, Time
+from src.Record import Record, resource_path
 if TYPE_CHECKING:
     from MainFrame import MainFrame
 

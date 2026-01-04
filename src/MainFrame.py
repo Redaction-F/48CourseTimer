@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from TimerFrame import TimerFrame
-from InfoFrame import InfoFrame
-from Record import Record
+from src.TimerFrame import TimerFrame
+from src.InfoFrame import InfoFrame
+from src.Record import Record
 
 class MainFrame(ttk.Frame):
     def __init__(self, master, record: Record):

@@ -2,10 +2,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 import tkinter as tk
 from tkinter import ttk
-from LapTimer import Time
-from Record import Record
-from SettingRecordFrame import open_set_record
-from Other import FortyEightCourseTimerError
+from src.LapTimer import Time
+from src.Record import Record
+from src.SettingRecordFrame import open_set_record
+from src.Other import FortyEightCourseTimerError
 if TYPE_CHECKING:
     from MainFrame import MainFrame
 

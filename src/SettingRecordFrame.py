@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from typing import Callable, Literal, TypeGuard, Optional
-from LapTimer import Time
-from Record import OptionRecord, Record, open_read_record
+from src.LapTimer import Time
+from src.Record import OptionRecord, Record, open_read_record
 
 def open_set_record(record: Record, set_record: Callable[[Record], None]):
     def __close():

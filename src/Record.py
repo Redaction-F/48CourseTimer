@@ -4,8 +4,8 @@ import re
 from typing import Callable, Self, Optional
 import tkinter as tk
 from tkinter import ttk, messagebox
-from LapTimer import Time
-from Other import FortyEightCourseTimerError
+from src.LapTimer import Time
+from src.Other import FortyEightCourseTimerError
 
 BACKUP_DIR_NAME = "backup"
 
@@ -75,7 +75,7 @@ def resource_path(path: Optional[str]=None, is_backup: bool=False) -> str:
             dir_path = sys._MEIPASS
         else:
             dir_path = os.path.abspath('.')
-        return join_path(os.path.join(dir_path, "resource"), path)
+        return join_path(os.path.join(dir_path, "src/resource"), path)
 
 def read_record(file_name: str, is_backup: bool=False) -> Record:
     file_path: str = resource_path(file_name, is_backup=is_backup)
