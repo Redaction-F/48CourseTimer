@@ -161,7 +161,7 @@ class ReadRecordFrame(ttk.Frame):
     
     def update_file_list(self):
         self.__file_list.clear()
-        re_patter: re.Pattern = re.compile("(.+)\.txt")
+        re_patter: re.Pattern = re.compile(r"(.+)\.txt")
         match: Optional[re.Match]
         for file_name in sorted(os.listdir(resource_path(is_backup=True))):
             match = re_patter.match(file_name)
