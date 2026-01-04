@@ -3,9 +3,9 @@ import sys
 import shutil
 import tkinter as tk
 from tkinter import ttk, messagebox
-from MainFrame import MainFrame
-from Record import read_top_record, resource_path, BACKUP_DIR_NAME
-from LapTimer import Time
+from src.MainFrame import MainFrame
+from src.Record import read_top_record, resource_path, BACKUP_DIR_NAME
+from src.LapTimer import Time
 
 def close_with_save():
     try:
