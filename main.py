@@ -34,15 +34,17 @@ root.protocol("WM_DELETE_WINDOW", close_with_save)
 root.rowconfigure(0, weight=1)
 root.columnconfigure(0, weight=1)
 
+normal_font: str = "HG丸ｺﾞｼｯｸM-PRO"
+mono_font: str = "Courier New"
 style: ttk.Style = ttk.Style(root)
 style.configure("MyMainFrame.TFrame", background="#8F8F8F")
 style.configure("MyFrame.TFrame", background="#CFCFCF")
-style.configure("MyLabel.TLabel", anchor=tk.CENTER, font=("HG丸ｺﾞｼｯｸM-PRO", 12))
-style.configure("MyNameLabel.TLabel", background="#CFCFCF", anchor=tk.CENTER, font=("HG丸ｺﾞｼｯｸM-PRO", 24))
-style.configure("MyTimer.TLabel", background="#AFAFAF", anchor=tk.CENTER, width=15, font=("Consolas", 50))
+style.configure("MyLabel.TLabel", anchor=tk.CENTER, font=(normal_font, 12))
+style.configure("MyNameLabel.TLabel", background="#CFCFCF", anchor=tk.CENTER, font=(normal_font, 24))
+style.configure("MyTimer.TLabel", background="#AFAFAF", anchor=tk.CENTER, width=15, font=(mono_font, 50))
 style.configure("MyEmpty.TLabel", background="#CFCFCF")
-style.configure("MyButton.TButton", background="#8F8F8F", width=8, font=("HG丸ｺﾞｼｯｸM-PRO", 18))
-style.configure("MyTable.Treeview", background="#AFAFAF", font=("Consolas", 12), rowheight=15)
+style.configure("MyButton.TButton", background="#8F8F8F", width=8, font=(normal_font, 18))
+style.configure("MyTable.Treeview", background="#AFAFAF", font=(mono_font, 12), rowheight=15)
 
 main_frame: MainFrame = MainFrame(root, record)
 
